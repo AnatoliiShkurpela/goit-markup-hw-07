@@ -64,14 +64,15 @@ body {
 }
 
 /*components*/
-.conteiner{
+/* .conteiner{
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+} */
 
-}
+
 .images{
     display: block;
     max-width: 100%;
@@ -93,7 +94,7 @@ body {
 /*components*/
 
 /*header*/
-.header-conteiner{
+/* .header-conteiner{
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .wis-header{
@@ -211,7 +212,7 @@ font-family: 'Roboto',sans-serif;
 .contact:hover,
 .contact:focus {
         color: var(--secondary-color-first);
-}
+} */
 
     /*header*/
 
