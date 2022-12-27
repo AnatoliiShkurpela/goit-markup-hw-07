@@ -39,7 +39,9 @@
                      <a class="contact"  href="tel:+110001111111">+11 000 111 11 11</a>
                  </li>
             </ul> 
-        <button type="button" class="mobile-menu-open js-open-menu">
+        <button type="button" class="mobile-menu-open js-open-menu" class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
             <svg class="mobile-menu-open-icon" width="32" height="22">
                 <use href="./images/sprite.svg.svg#icon-burger"></use>
             </svg>
@@ -47,7 +49,7 @@
         </div>
         <div class="mobile-menu js-menu-container">
             <div class="conteiner mobile-menu-conteiner">
-                <button class="mobile-menu-close-btn js-close-menu">
+                <button class="mobile-menu-close-btn menu-toggle js-close-menu">
                     <svg class="mobile-menu-close-icon" width="8" height="8">
                         <use href="./images/sprite.svg.svg#icon-close-black"></use>
                     </svg>
@@ -502,6 +504,9 @@
     </div>
     <script src="./js/modal.js"></script> -->
     <script src="./js/mobile-menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     </body>
     
     </html>
