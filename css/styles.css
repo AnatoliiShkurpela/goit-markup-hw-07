@@ -125,11 +125,8 @@ body {
     padding-left: 16px;
     padding-right: 16px;
 }
-.wis-header{
-    align-items: center;
-    justify-content: space-between;
-}
 
+@media screen and (max-width:767px){
 .mobile-menu-open{
     background-color: transparent;
     border: none;
@@ -137,11 +134,48 @@ body {
     line-height: 0;
 }
 
+.mobile-list-header{
+    margin-top: auto;
+}
+.header-conteiner{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.wis-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color-first);
+    text-decoration: none;
+    align-items: center;
+}    
+.logo-dark {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color-theme-light);
+    text-decoration: none;
+
+}
+
 .mobile-menu {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     z-index: 1000;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
     background-color: var(--secondary-color-third);
@@ -177,10 +211,15 @@ body {
 }
 
 .mobile-menu-item {
+    display: block ;
     position: relative;
-    color: #4d5ae5;
+    color: #2E2F42;
 }
 
+.mobile-menu-item:hover,
+.mobile-menu-item:focus{
+    color: #4d5ae5
+}
 .mobile-phone-mail {
     display: flex;
     flex-direction: column;
@@ -231,6 +270,8 @@ body {
 
 
 .mobile-menu-conteiner {
+    display: flex;
+    flex-direction: column;
     position: relative;
     padding-top: 80px;
     padding-left: 40px;
@@ -251,6 +292,140 @@ body {
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
+}
+@media screen and (min-width:768px) {
+    .mobile-menu{
+        display: none;
+    }
+    .mobile-menu-open{
+        display: none;
+    }
+.wis-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color-first);
+    text-decoration: none;
+    align-items: center;
+}
+
+.logo-dark {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color-theme-light);
+    text-decoration: none;
+
+}
+.main-nav {
+    margin-left: 123px;
+    margin-right: auto;
+
+}
+
+.list {
+    display: flex;
+}
+
+.list .menu-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
+.list .menu-item+.menu-item {
+    margin-left: 40px;
+}
+
+.menu-item {
+    position: relative;
+}
+
+
+.menu-link {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-light);
+    text-decoration: none;
+    transition: color var(--transition-duradion-and-funk);
+}
+
+.act.menu-link::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: var(--secondary-color-first);
+    border-radius: 2px;
+    bottom: 0;
+    left: 0;
+}
+
+.menu-link:hover {
+    color: var(--secondary-text-color-theme-light);
+}
+
+.menu-link:focus {
+    color: var(--secondary-color-first);
+}
+
+.header-list-contact{
+    display: block;
+}
+.list .list-contact {
+    display: block;
+}
+
+.list .list-contact+.list-contact {
+    margin-bottom: 4px;
+}
+
+.contact {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-theme-light);
+    text-decoration: none;
+    transition: color var(--transition-duradion-and-funk);
+}
+.contact-mail{
+    padding-top: 24px;
+}
+.contact-phone{
+    padding-bottom: 10px;
+}
+
+.contact:hover,
+.contact:focus {
+    color: var(--secondary-color-first);
+}
+}
+
+@media  screen and (min-width: 1200px){
+    
+}
+    
+
+
 
 /* .header-conteiner{
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
