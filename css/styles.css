@@ -204,6 +204,9 @@ body {
     .list-mail{
         margin-bottom: 4px;
     }
+    .header-list-contact{
+        flex-direction: column;
+    }
 
 }
 @media screen and (min-width:1200px) {
@@ -229,6 +232,8 @@ body {
     
     .header-list-contact {
         display: flex;
+        align-items: center;
+        margin-left: auto;
     }
     .logo {
         margin-right: 77px;
