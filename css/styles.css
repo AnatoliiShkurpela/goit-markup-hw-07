@@ -166,6 +166,7 @@ body {
     color: var(--secondary-color-first);
 }
 
+
  /* ---------header */
 
 @media screen and (min-width:480px) {
@@ -180,7 +181,7 @@ body {
     .conteiner {
         width: 768px;
     }
-    .mobile_menu_open {
+    .mobile-menu-open {
         display: none;
     }
     .header-list{
@@ -379,7 +380,6 @@ body {
 
 /* ---------mobile-menu */
 
-/* ----------hero */
 
 @media screen and (max-width:767px){
     .hero-fon{
