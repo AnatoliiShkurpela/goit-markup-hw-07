@@ -232,6 +232,7 @@ body {
     
     .header-list-contact {
         display: flex;
+        flex-direction: row;
         align-items: center;
         margin-left: auto;
     }
@@ -385,9 +386,10 @@ body {
 
 /* ---------mobile-menu */
 
+/* ---------------hero */
 
-@media screen and (max-width:767px){
-    .hero-fon{
+@media screen and (min-width: 320px) {
+    .hero-fon {
         margin: 0 auto;
         max-width: 767px;
         text-align: center;
@@ -398,131 +400,148 @@ body {
             url(../images/mobile-people-office.jpg);
         background-size: cover;
     }
-    .main-title{
-        margin-bottom: 80px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        text-align: center;
-        color: #FFFFFF;
+ @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+ screen and (min-resolution: 192dpi) and (max-width: 767px),
+ screen and (min-resolution: 2dppx) and (max-width: 767px) {
+     .hero-fon {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                 rgba(46, 47, 66, 0.7)),
+             url(../images/mobile-people-office@2x.jpg);
+     }
+    .main-title {
+        margin-bottom: 72px;
     }
-    .modal-btn{
+    }
+        .main-title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.11;
+            text-align: center;
+            color: var(--secondary-color-fifth);
+        }
+    .modal-btn:hover,
+    .modal-btn:focus {
+        color: var(--secondary-color-fifth);
+        background-color: #404bbf;
+    }    
+    .modal-btn {
+    padding: 16px 32px;
+    font-weight: 700;
+    font-size: 16px;
+     line-height: 1.19;
+    color: var(--secondary-color-fifth);
+    background-color: var(--secondary-color-first);
+     border-color: transparent;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: color var(--transition-duradion-and-funk),
+        background-color var(--transition-duradion-and-funk);
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .hero-fon {
+        padding: 112px 0;
+        text-align: center;
+        width: 100%;
+        height: 435px;
+        max-width: 1199px;
+        background-color: var(--accent-color);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/tablet-people-office.jpg);
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+        .hero-fon {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/tablet-people-office@2x.jpg);
+        }
+
+        .main-title {
+            margin-bottom: 40px;
+        }
+    }
+
+        .main-title {
+        max-width: 496px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        color: var(--secondary-color-fifth);
+    }
+    .modal-btn:hover,
+    .modal-btn:focus {
+        color: var(--primary-text-color-theme-light);
+        background-color: #404bbf;
+    }
+    .modal-btn {
         padding: 16px 32px;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.19;
-        color: #FFFFFF;
+        color: var(--secondary-color-fifth);
         background-color: var(--secondary-color-first);
         border-color: transparent;
         cursor: pointer;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         transition: color var(--transition-duradion-and-funk),
-        box-shadow var(--transition-duradion-and-funk),
-        background-color var(--transition-duradion-and-funk);
-    }
-        .modal-btn:hover, 
-        .modal-btn:focus{
-            color: #ffffff;
-            box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-            background-color: #404BBF;
-        }        
-}
-
-@media screen and (min-width: 768px){
-    .hero-fon{
-        margin: 0 auto;
-        padding: 112px 0;
-        text-align: center;
-        width: 100%;
-        height: 435px;
-        max-width: 1199px;
-        background-color: var(--secondary-color-first);
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-         url(../images/mobile-people-office\ \(2\).jpg);
-        background-size: cover;
-    }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-            url(../images/mobile-people-office@2x\ \(2\).jpg);
+            background-color var(--transition-duradion-and-funk);
     }
 }
-.main-title{
-    max-width: 492px;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    color: #FFFFFF;
-}
-.modal-btn {
-    padding: 16px 32px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.19;
-    color: #FFFFFF;
-    background-color: var(--secondary-color-first);
-    border-color: transparent;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    transition: color var(--transition-duradion-and-funk),
-        box-shadow var(--transition-duradion-and-funk),
-        background-color var(--transition-duradion-and-funk);
-}
 
-.modal-btn:hover,
-.modal-btn:focus {
-    color: #ffffff;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    background-color: #404BBF;
-}
-}
 
-@media screen and (min-width: 1200px){
-    .hero-fon{
+@media screen and (min-width: 1200px) {
+    .hero-fon {
         max-width: 1440px;
         height: 100%;
         padding-top: 192px;
         padding-bottom: 192px;
-        background-color: var(--secondary-color-first);
+        background-color: var(--primary-text-color-theme-light);
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url("../images/tablet-people-office.jpg");
+            url("../images/mobile-people-office\ \(2\).jpg");
         background-size: cover;
         text-align: center;
         margin: 0 auto;
     }
-    
+
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-        .hero {
+        .hero-fon {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/tablet-people-office@2x.jpg);
+                url(../images/mobile-people-office@2x\ \(2\).jpg);
+        }
+
+        .main-title {
+            margin-bottom: 48px;
         }
     }
-    
+
     .main-title {
         font-weight: 700;
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
-        color: #FFFFFF;
+        color: var(--secondary-color-fifth);
         width: 496px;
         text-align: center;
-        margin-bottom: 80px;
     }
-    
+
     .modal-btn {
         font-family: "Roboto", sans-serif;
         font-weight: 500;
@@ -531,83 +550,34 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
         letter-spacing: 0.04em;
         cursor: pointer;
         background-color: var(--secondary-color-first);
-         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        color: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        color: var(--secondary-color-fifth);
         border-radius: 4px;
         border-color: transparent;
         padding-top: 16px;
         padding-bottom: 16px;
         padding-left: 32px;
-         padding-right: 32px;
-        transition: box-shadow var(--transition-duradion-and-funk);
+        padding-right: 32px;
+        transition: background-color var(--transition-duradion-and-funk),
+            box-shadow var(--transition-duradion-and-funk);
     }
-    
-    .modal-btn {
-        color: #ffffff;
+
+    .modal-btn:active {
+        color: var(--secondary-color-fifth);
         background-color: #404bbf;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-     }
-    
+    }
+
     .modal-btn:hover,
     .modal-btn:focus {
-        background-color: #404BBF;
+        background-color: var(--secondary-color-first);
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+            0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
 }
-/* .hero-fon {
-    width: 1440px;
-    text-align: center;
-    padding: 192px 0;
-    background-size: cover;
-    background-position: center;
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero/people-office.jpg);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.main-title {
-    font-family: 'Roboto',sans-serif;
-    width: 492px;
-    height: 120px;
-    font-weight: 500;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-    margin: 0 auto;
-    margin-bottom: 48px;
-}
+/* ---------------hero */
 
 
-
-.modal-btn {
-        font-family: 'Roboto',sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19; 
-        text-align: center;
-        letter-spacing: 0.04em;
-        color: #FFFFFF;
-        background-color: var(--secondary-color-first);
-        cursor: pointer;
-        margin: 0;
-        padding: 16px 32px;
-        border: none;
-        border-radius: 4px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        transition: box-shadow var(--transition-duradion-and-funk);
-}   
-
-.modal-btn:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.modal-btn:focus {
-    background-color: #404BBF;
-} */
 
 /*hero*/
 /*main*/
