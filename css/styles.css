@@ -923,6 +923,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+    .customer-section {
+            padding: 120px ;
+        }
     .customers-list {
         display: flex;
         align-items: center;
