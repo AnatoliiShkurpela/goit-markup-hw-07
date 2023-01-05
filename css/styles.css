@@ -32,6 +32,8 @@
 
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 ul {
     margin-top: 0;
@@ -405,6 +407,9 @@ body {
 .socil-list-link-mobile:hover,
 .socil-list-link-mobile:focus {
     fill: var(--secondary-color-first);
+}
+.socil-list-link-mobile:not(:last-child) {
+    margin-right: 56px;
 }
 
 /* ---------mobile-menu */
@@ -785,10 +790,12 @@ body {
                /* ----Our Teame---- */
 @media screen and (max-width: 767px) {
     .our-teame-mobile {
-        /* display: flex;
-        justify-content: center;
-        flex-wrap: wrap; */
+       padding-right: 82px;
+        padding-left: 82px;
         gap: 24px;
+    }
+    .teame-item{
+        margin-bottom: 72px;
     }
 }
 
@@ -801,6 +808,8 @@ body {
     .our-teame-tablet {
         display: flex;
         flex-wrap: wrap;
+        padding-right: 108px;
+            padding-left: 108px;
         row-gap: 56px;
         column-gap: 24px;
         justify-content: center;
