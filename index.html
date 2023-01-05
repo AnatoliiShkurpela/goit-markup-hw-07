@@ -132,7 +132,7 @@
                                     <use href="./images/sprite.svg.svg#icon-strategy"></use>
                                 </svg>
                             </div>
-                            <h3 class="secondary-title">Strategy</h3>
+                            <h3 class="secondary-title ">Strategy</h3>
                             <p class="secondary-info">Our goal is to identify the business
                             problem to walk away with the perfect and creative solution.</p>
                         </li>
@@ -462,6 +462,58 @@
             </div>
            
             </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-button" data-modal-close>
+                <svg class="modal-close-button-icon" width="8" height="8">
+                    <use href="./images/sprite.svg.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <p class="modal-form-text">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <label class="modal-form-field">
+                    <span class="modal-form-input-desc">Name</span>
+                    <span class="modal-form-input-wrapper">
+                        <input type="text" name="user-name" class="modal-form-input" required pattern="[a-zA-Zа-яА-Я]+"
+                            minlength="2" />
+                        <svg class="modal-form-input-icon" width="12" height="12">
+                            <use href="./images/sprite.svg.svg#icon-name"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    <span class="modal-form-input-desc">Phone</span>
+                    <span class="modal-form-input-wrapper">
+                        <input type="tel" name="user-tel" class="modal-form-input" required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
+                        <svg class="modal-form-input-icon" width="13" height="13">
+                            <use href="./images/sprite.svg.svg#icon-phone"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    <span class="modal-form-input-desc">Email</span>
+                    <span class="modal-form-input-wrapper">
+                        <input type="email" name="user-email" class="modal-form-input" required />
+                        <svg class="modal-form-input-icon" width="15" height="12">
+                            <use href="./images/sprite.svg.svg#icon-email"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    <span class="modal-form-input-desc">Comment</span>
+                    <textarea name="user-message" class="modal-form-massage" placeholder="Text input"></textarea>
+                </label>
+                <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check visually-hidden" />
+                <label for="user-policy" class="modal-form-check-desc">
+                    <span class="user-police">I accept the terms
+                        and conditions of the&nbsp;<a class="privacy-policy" href="">Privacy Policy</a>
+                    </span>
+                </label>
+                <button type="submit" class="modal-for-submit">Send</button>
+            </form>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
