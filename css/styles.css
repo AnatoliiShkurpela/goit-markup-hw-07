@@ -23,7 +23,7 @@
 
 /*------------components*/
 .container {
-    width: 100%;
+    width: 1158PX;
     padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
@@ -419,25 +419,31 @@ body {
             text-align: center;
             color: var(--secondary-color-fifth);
         }
-    .modal-btn:hover,
-    .modal-btn:focus {
-        color: var(--secondary-color-fifth);
-        background-color: #404bbf;
-    }    
-    .modal-btn {
-    padding: 16px 32px;
-    font-weight: 700;
-    font-size: 16px;
-     line-height: 1.19;
-    color: var(--secondary-color-fifth);
-    background-color: var(--secondary-color-first);
-     border-color: transparent;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    transition: color var(--transition-duradion-and-funk),
-        background-color var(--transition-duradion-and-funk);
-    }
+   .modal-btn {
+       font-family: 'Roboto', sans-serif;
+       font-weight: 500;
+       font-size: 16px;
+       line-height: 1.19;
+       text-align: center;
+       letter-spacing: 0.04em;
+       color: #FFFFFF;
+       background-color: var(--secondary-color-first);
+       cursor: pointer;
+       margin: 0;
+       padding: 16px 32px;
+       border: none;
+       border-radius: 4px;
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+       transition: box-shadow var(--transition-duradion-and-funk);
+   }
+
+   .modal-btn:hover {
+       box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+   }
+
+   .modal-btn:focus {
+       background-color: #404BBF;
+   }
 }
 
 
@@ -481,25 +487,31 @@ body {
         text-align: center;
         color: var(--secondary-color-fifth);
     }
-    .modal-btn:hover,
-    .modal-btn:focus {
-        color: var(--primary-text-color-theme-light);
-        background-color: #404bbf;
-    }
-    .modal-btn {
-        padding: 16px 32px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.19;
-        color: var(--secondary-color-fifth);
-        background-color: var(--secondary-color-first);
-        border-color: transparent;
-        cursor: pointer;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        transition: color var(--transition-duradion-and-funk),
-            background-color var(--transition-duradion-and-funk);
-    }
+        .modal-btn {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.19;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            background-color: var(--secondary-color-first);
+            cursor: pointer;
+            margin: 0;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            transition: box-shadow var(--transition-duradion-and-funk);
+        }
+    
+        .modal-btn:hover {
+            box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        }
+    
+        .modal-btn:focus {
+            background-color: #404BBF;
+        }
 }
 
 
@@ -542,38 +554,30 @@ body {
         text-align: center;
     }
 
-    .modal-btn {
-        font-family: "Roboto", sans-serif;
+.modal-btn {
+        font-family: 'Roboto',sans-serif;
         font-weight: 500;
         font-size: 16px;
-        line-height: 1.19;
+        line-height: 1.19; 
+        text-align: center;
         letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background-color: var(--secondary-color-first);
         cursor: pointer;
-        background-color: var(--secondary-color-first);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        color: var(--secondary-color-fifth);
+        margin: 0;
+        padding: 16px 32px;
+        border: none;
         border-radius: 4px;
-        border-color: transparent;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        padding-left: 32px;
-        padding-right: 32px;
-        transition: background-color var(--transition-duradion-and-funk),
-            box-shadow var(--transition-duradion-and-funk);
-    }
-
-    .modal-btn:active {
-        color: var(--secondary-color-fifth);
-        background-color: #404bbf;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
+        transition: box-shadow var(--transition-duradion-and-funk);
+}   
 
-    .modal-btn:hover,
-    .modal-btn:focus {
-        background-color: var(--secondary-color-first);
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    }
+.modal-btn:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.modal-btn:focus {
+    background-color: #404BBF;
+}
 }
 /* ---------------hero */
 
@@ -784,7 +788,7 @@ body {
 }
 
 .teame-item {
-    background-color: var(--team_dscr);
+    background-color: var(--);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -972,9 +976,7 @@ body {
 
 
 
-
-
-.flex-list {
+/* .flex-list {
     column-gap: 24px;
     row-gap: 48px;
     display: flex;
@@ -1088,8 +1090,8 @@ body {
     background-color: var(--secondary-color-first);
     border-color: transparent;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-/*main*/
+} */
+
 /*------------footer*/ 
 .modal-form-subscribe {
     color: var(--secondary-color-fifth);
@@ -1139,11 +1141,17 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--secondary-color-fourth);
-}
-
-.logo-light {
     color: var(--secondary-color-first);
+}
+.container {
+    width: 1158PX;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo-light {
+    color: var(--secondary-color-fourth);
 }
 
 .footer-fon {
@@ -1404,6 +1412,12 @@ body {
     padding-bottom: 24px;
     padding-left: 24px;
     padding-right: 24px;
+}
+@media screen and (max-width: 480px) {
+    .modal {
+        width: 90vw;
+        height: auto;
+    }
 }
 
 .modal-close-button{
