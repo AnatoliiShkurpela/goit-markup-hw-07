@@ -263,6 +263,7 @@ body {
         display: none;
     }
     .mobile-conteiner{
+    width: 100%;
     padding-left: 16px;
     padding-right: 16px;
     margin-left: auto;
@@ -643,7 +644,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
+    line-height: 1.11;
     text-align: center;
     margin-bottom: 8px;
     color: var(--primary-text-color-theme-light);   
@@ -653,7 +654,8 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
+    text-align: center;
     color:var(--secondary-text-color-theme-light);
     padding: 0 auto;
    }
@@ -681,7 +683,8 @@ body {
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
-        line-height: 40px;
+        line-height: 1.11;
+        text-align: left;
         margin-bottom: 8px;
         color:var(--primary-text-color-theme-light);
     }
@@ -690,7 +693,8 @@ body {
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 1.5;
+        text-align: left;
         color: var(--secondary-text-color-theme-light);
         padding: 0 auto;
     }
@@ -713,7 +717,6 @@ body {
     .direction-list {
         flex-basis: calc(100% / 4 - var(--card-set-gap));
         text-align: left;
-        margin-left: var(--card-set-gap);
     }
     .direction-list-link{
         display: flex;
@@ -730,8 +733,8 @@ body {
             font-style: normal;
             font-weight: 700;
             font-size: 20px;
-            line-height: 40px;
-            text-align: center;
+            line-height: 1.2;
+            text-align: left;
             margin-bottom: 8px;
             color: var(--primary-text-color-theme-light);
         }
@@ -741,7 +744,8 @@ body {
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
-            line-height: 24px;
+            line-height: 1.5;
+            text-align: left;
             color: var(--secondary-text-color-theme-light);
             padding: 0 auto;
         }
@@ -761,6 +765,9 @@ body {
         gap: 24px;
         justify-content: space-between;
 }
+.what-are-we-doing-retreat{
+    padding-bottom: 120px;
+}
 .index-header{
     font-weight: 700;
     font-size: 36px;
@@ -777,13 +784,13 @@ body {
             padding: 0;
             margin: 0;
             list-style: none;
+            gap: 24px;
             margin-left: calc(-1*var(--card-set-gap));
         }
     
 .what-are-we-doing-list {
     flex-basis: calc(100% / 3 - var(--card-set-gap));
-    text-align: left;
-    margin-left: var(--card-set-gap);}
+    }
 }
 
 /* ----------------What Are We Doing */
@@ -899,7 +906,7 @@ body {
 
 .socil-list-link:hover,
 .socil-list-link:focus {
-    background-color: #31d0aa;
+    background-color: #404BBF;;
     fill: var(--secondary-color-first);
 }
 
@@ -970,7 +977,7 @@ body {
 
 @media screen and (min-width: 1200px) {
     .customer-section {
-            padding: 120px ;
+            padding: 120px 0;
         }
     .customers-list {
         display: flex;
@@ -1241,7 +1248,7 @@ body {
 
     .footer-title,
     .footer-subscribe {
-        text-align: center;
+        text-align: left;
     }
 
     .modal-form-subscribe {
@@ -1373,7 +1380,6 @@ body {
 .footer-social-list {
     display: flex;
     gap: var(--card-set-fotter-gap);
-    margin-top: 12px;
 }
 
 .footer-social-list-link{
@@ -1416,6 +1422,7 @@ body {
         height: 40px;
         margin-top: 16px;
     }
+}
 .conteiner {
     width: 1158px;
     padding-left: 15px;
@@ -1484,6 +1491,10 @@ body {
     transition: box-shadow var(--transition-duradion-and-funk),
     background-color var(--transition-duradion-and-funk);
     }
+.modal-close-button:hover,
+.modal-close-button:focus{
+    background: #404BBF;
+}
 
 .modal-close-button-icon{
     transition: var(--transition-duradion-and-funk);
@@ -1495,7 +1506,7 @@ body {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 4px;
 }
-}
+
 
 /*modal windiw*/
 
