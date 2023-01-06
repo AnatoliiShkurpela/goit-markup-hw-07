@@ -385,6 +385,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
 }
+
 .mobile-menu-close-btn:active {
     background-color: var(--secondary-color-first);
 }
@@ -408,8 +409,10 @@ body {
 .socil-list-link-mobile:focus {
     fill: var(--secondary-color-first);
 }
-.socil-list-link-mobile:not(:last-child) {
-    margin-right: 56px;
+.sociai-list-mobile {
+    display: flex;
+    gap: 56px;
+    margin-top: 112px;
 }
 
 /* ---------mobile-menu */
