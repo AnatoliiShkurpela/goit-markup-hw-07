@@ -172,7 +172,7 @@ body {
  /* ---------header */
 
 @media screen and (min-width:480px) {
-    conteiner {
+    .conteiner {
         width: 396px;
     }
     .hero-fon{
