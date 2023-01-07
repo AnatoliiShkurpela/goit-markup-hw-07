@@ -209,7 +209,7 @@ body {
 }
  @media screen and (min-width:1200px) {
      .container {
-         width: 1200px;
+         width: 1158px;
      }
     
     .list-mail {
@@ -569,7 +569,7 @@ body {
 
 @media screen and (min-width:1200px) {
     .container {
-        width: 1200px;
+        width: 1158px;
     }
     .hero-fon {
         max-width: 1440px;
@@ -1077,7 +1077,7 @@ body {
 
  @media screen and (min-width:1200px) {
      .container {
-         width: 1200px;
+         width: 1158px;
      }
     .customer-section {
             padding: 120px 0;
@@ -1437,7 +1437,7 @@ body {
 
 @media screen and (min-width:1200px) {
     .container {
-        width: 1200px;
+        width: 1158px;
     }
     .footer-fon {
         padding-top: 100px;
@@ -1523,7 +1523,7 @@ body {
 /* -----------Form Footer------------ */
 @media screen and (min-width: 1200px) {
     .container {
-            width: 1200px;
+            width: 1158px;
         }
     .subscribe-text {
         font-family: "Roboto";
