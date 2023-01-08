@@ -1147,21 +1147,143 @@ body {
 
 /* ---------------Portfolio */
 
-.flex-list {
-    column-gap: 24px;
-    row-gap: 48px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
+@media screen and (max-width: 767px) {
+    /* .link_mobile {
+        color: #4d5ae5;
+    } */
+
+    .portfolio-retreat {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .list-button {
+        margin-bottom: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 24px;
+        width: 263px;
+    }
+
+    .flex-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 48px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .flex-element {
+        width: 396px;
+    }
+
+    .overlay {
+        display: none;
+    }
 }
 
-.flex-element {
-    flex-basis: calc((100% - 2 * var(--card-set-gap))/3);
-    text-decoration: none;
-    border: 0.5px solid var(--secondary-color-fourth);
+.portfolio-button {
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    border: 1px solid var(--secondary-color-third);
+    transition: color var(--transition-duradion-and-funk),
+        box-shadow var(--transition-duradion-and-funk),
+        border-color var(--transition-duradion-and-funk),
+        background-color var(--transition-duradion-and-funk);
+}
+
+.portfolio-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--secondary-color-first);
+    background-color: var(--secondary-color-third);
+    cursor: pointer;
+    border: 1px solid var(--secondary-color-third);
+    border-radius: 4px;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+    color: var(--secondary-color-fourth);
+    background-color: var(--secondary-color-first);
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+
+@media screen and (min-width: 768px) {
+    .portfolio-retreat {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .list-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 24px;
+    }
+
+    .flex-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+        margin-top: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .flex-element {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .overlay {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio-retreat {
+        padding-top: 96px;
+        padding-bottom: 120px;
+    }
+
+    .list-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 24px;
+    }
+
+    .flex-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 48px;
+        margin-top: 72px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .flex-element {
+        flex-basis: calc((100% - 48px) / 3);
+    }
 }
 
 .portfolio-link:hover,
@@ -1178,9 +1300,14 @@ body {
     transition: box-shadow var(--transition-duradion-and-funk);
 }
 
-.portfolio-link:hover .overley,
-.portfolio-link:focus .overley {
-    transform: translate(0, 0);
+.portfolio-card {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 0.5px solid;
+    border-color: var(--secondary-color-fourth);
+    border-top: none;
 }
 
 .portfolio-overley {
@@ -1194,8 +1321,9 @@ body {
     width: 100%;
     height: 100%;
     transform: translate(0, 100%);
-    transition:transform var(--transition-duradion-and-funk);
-    color:var(--secondary-color-fourth);
+    transition: transform var(--transition-duradion-and-funk),
+    opacity var(--transition-duradion-and-funk);
+    color: var(--secondary-color-fourth);
     background-color: var(--secondary-color-first);
     font-weight: 400;
     font-size: 16px;
@@ -1205,63 +1333,16 @@ body {
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 164px;
+    background-blend-mode: soft-light;
+    mix-blend-mode: normal;
+}
+.portfolio-link:hover .overley,
+.portfolio-link:focus .overley {
+    transform: translate(0, 0);
+    opacity: 1;
 }
 
-.portfolio-button-list {
-    margin-left: var(--card-set-gap);
-}
-
-.list-button {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    justify-content: center;
-    margin-bottom: 72px;
-
-}
-
-.portfolio-button {
-    padding-top: 12px;
-    padding-right: 24px;
-    padding-bottom: 12px;
-    padding-left: 24px;
-    border: 1px solid var(--secondary-color-third);
-    transition: color var(--transition-duradion-and-funk),
-    box-shadow var(--transition-duradion-and-funk),
-    border-color var(--transition-duradion-and-funk),
-    background-color var(--transition-duradion-and-funk);
-}
-
-.portfolio-button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: var(--secondary-color-first);
-    background-color: var(--secondary-color-third);
-    cursor: pointer;
-    border: 1px solid var(--secondary-color-third);
-    border-radius: 4px;
-}
-
-.portfolio-card {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border: 0.5px solid;
-    border-color: var(--secondary-color-fourth);
-    border-top: none;
-}
-
-.portfolio-button:hover,
-.portfolio-button:focus {
-    color: var(--secondary-color-fourth);
-    background-color: var(--secondary-color-first);
-    border-color: transparent;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+/* --------Portfolio */
 
 /*------------footer*/ 
 .modal-form-subscribe {
@@ -1323,6 +1404,11 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    /* .secondary-title{
+        text-align: center;
+    } */
+    
+  
     @media screen and(max-width:427px) {
             .container {
                 width: 100vw;
@@ -1498,6 +1584,7 @@ body {
 .footer-subscribe {
     text-align: left;
 }
+
 
 .footer-info {
     font-weight: 400;
