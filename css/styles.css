@@ -463,11 +463,13 @@ body {
     }
     }
         .main-title {
+            width: 318px;
             font-weight: 700;
             font-size: 36px;
             line-height: 1.11;
             text-align: center;
             color: var(--secondary-color-fifth);
+            margin: auto;
         }
    .modal-btn {
        font-family: 'Roboto', sans-serif;
@@ -493,9 +495,8 @@ body {
 
    .modal-btn:focus {
        background-color: #404BBF;
-   }
+   }  
 }
-
   @media screen and (min-width: 768px) {
       .container {
           width: 768px;
@@ -529,6 +530,7 @@ body {
     }
 
         .main-title {
+            width: 494px;
         max-width: 496px;
         margin-bottom: 40px;
         margin-left: auto;
@@ -753,6 +755,10 @@ body {
         padding-top: 120px;
 
     }
+        .direction-list {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
 
     .direction{
         display: flex;
@@ -835,11 +841,12 @@ body {
     }
     .what-are-we-doing {
             display: flex;
-            padding: 0;
+            padding-left: 24px;
+            padding-right: 24px;
             margin: 0;
             list-style: none;
             gap: 24px;
-            margin-left: calc(-1*var(--card-set-gap));
+            /* margin-left: calc(-1*var(--card-set-gap)); */
         }
     
 .what-are-we-doing-list {
@@ -860,6 +867,9 @@ body {
                 margin-right: auto;
             }
         }
+        .secondary-title{
+            font-size: 20px;
+        }
     
         @media screen and (min-width: 428px) {
             .container {
@@ -871,9 +881,12 @@ body {
         padding-left: 82px;
         gap: 24px;
     }
-    .teame-item{
+    .teame-item {
         margin-bottom: 72px;
     }
+        .teame-item:last-child {
+            margin-bottom: 0;
+        }
 }
 
 .team-conteiner {
@@ -887,11 +900,12 @@ body {
                 width: 768px;
             }
         }
+        .secondary-title{
+            font-size: 20px;
+        }
     .our-teame-tablet {
         display: flex;
         flex-wrap: wrap;
-        padding-right: 108px;
-            padding-left: 108px;
         row-gap: 56px;
         column-gap: 24px;
         justify-content: center;
@@ -909,6 +923,7 @@ body {
     flex-basis: calc(100% / 2 - var(--card-set-gap));
 }
 .teame-item {
+    max-width: 400px ;
     background-color: var(--secondary-color-fifth);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -931,6 +946,8 @@ body {
     .our-teame {
         display: flex;
         justify-content: space-between;
+        padding-left: 24px;
+        padding-right: 24px;
     }
     .teame-item {
         flex-basis: calc(100% / 4 - var(--card-set-gap));
@@ -942,6 +959,7 @@ body {
     .team-conteiner {
         padding: 0;
     }
+   
 }
 
 .secondary-header {
@@ -989,6 +1007,7 @@ body {
 .social-list-item:not(:last-child) {
     margin-right: 24px;
 }
+
                 /* ----Our Teame---- */
 
 /* ---------------Customers */
@@ -1011,7 +1030,7 @@ body {
                     margin-left: auto;
                     margin-right: auto;
                 }
-            }
+        }
         
             @media screen and (min-width: 428px) {
                 .container {
@@ -1086,8 +1105,8 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* margin-top: 72px; */
-        gap: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
         fill: currentColor;
     }
 }
@@ -1126,9 +1145,9 @@ body {
 }
 /* ---------------Customers */
 
+/* ---------------Portfolio */
 
-
-/* .flex-list {
+.flex-list {
     column-gap: 24px;
     row-gap: 48px;
     display: flex;
@@ -1242,7 +1261,7 @@ body {
     background-color: var(--secondary-color-first);
     border-color: transparent;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-} */
+}
 
 /*------------footer*/ 
 .modal-form-subscribe {
@@ -1352,7 +1371,7 @@ body {
     }
 
     .logo{
-        margin-left: auto;
+        /* margin-left: auto; */
         margin-right: auto;
     }
 
@@ -1446,7 +1465,10 @@ body {
 
     .footer-conteiner {
         display: flex;
-        align-items: center;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 16px;
+            padding-right: 16px;
     }
 
     .footer-subscribe {
