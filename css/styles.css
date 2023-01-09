@@ -431,19 +431,7 @@ body {
 /* ---------------hero */
 
 @media screen and (min-width: 320px) {
-    @media screen and(max-width:427px) {
-            .container {
-                width: 100vw;
-                margin: 0;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-     @media screen and (min-width: 428px) {
-         .container {
-             width: 428px;
-         }
-     }
+    
      .main-title{
         margin-bottom: 72px;
      }
@@ -506,9 +494,7 @@ body {
    }  
 }
   @media screen and (min-width: 768px) {
-      .container {
-          width: 768px;
-      }
+      
     .hero-fon {
         padding: 112px 0;
         text-align: center;
@@ -578,9 +564,6 @@ body {
 
 
 @media screen and (min-width:1200px) {
-    .container {
-        width: 1200px;
-    }
     .hero-fon {
         max-width: 1440px;
         height: 100%;
@@ -661,19 +644,7 @@ body {
     margin: -1px;
 }
 @media screen and (max-width: 767px){
-    @media screen and(max-width:427px) {
-            .container {
-                width: 100vw;
-                margin: 0;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-    @media screen and (min-width: 428px) {
-        .container {
-            width: 428px;
-        }
-    }
+   
     .section-retreat{
         padding: 96px 0 96px 0;
     }
@@ -709,9 +680,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-            .container {
-                width: 768px;
-            }
+          
         
     .section-retreat{
         padding: 96px 0 96px 0;
@@ -752,9 +721,7 @@ body {
 }
 
 @media screen and (min-width:1200px) {
-    .container {
-        width: 1200px;
-    }
+   
     .section-retreat{
         padding-top: 120px;
 
@@ -807,11 +774,6 @@ body {
 
 /* ----------------What Are We Doing */
 
-    @media screen and (min-width: 768px) {
-            .container {
-                width: 768px;
-            }
-        }
     .what-are-we-doing-retreat{
         display: none;
     }
@@ -836,9 +798,7 @@ body {
     margin-bottom: 72px;
 }
 @media screen and (min-width:1200px) {
-    .container {
-        width: 1200px;
-    }
+   
     .what-are-we-doing {
             display: flex;
             /* padding-left: 24px;
@@ -867,26 +827,15 @@ body {
         .secondary-info {
             text-align: center;
         }
-    @media screen and(max-width:427px) {
-            .container {
-                width: 100vw;
-                margin: 0;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
+    
         .secondary-title{
             font-size: 20px;
         }
     
-        @media screen and (min-width: 428px) {
-            .container {
-                width: 428px;
-            }
-        }
+     
     .our-teame-mobile {
-       padding-right: 82px;
-        padding-left: 82px;
+       padding-right: 15px;
+        padding-left: 15px;
         gap: 24px;
     }
     .teame-item {
@@ -903,11 +852,7 @@ body {
 }
 
 @media screen and (min-width: 768px)  {
-    @media screen and (min-width: 768px) {
-            .container {
-                width: 768px;
-            }
-        }
+   
         .secondary-title{
             font-size: 20px;
         }
@@ -955,9 +900,7 @@ body {
 }
 
 @media screen and (min-width:1200px) {
-    .container {
-        width: 1200px;
-    }
+   
     .our-teame {
         display: flex;
         justify-content: space-between;
@@ -1034,11 +977,7 @@ body {
                 /* ----Our Teame---- */
 
 /* ---------------Customers */
-    @media screen and (min-width: 768px) {
-            .container {
-                width: 768px;
-            }
-        }
+   
     .customer-section {
         padding: 96px 0;
     }
@@ -1046,20 +985,6 @@ body {
 
 @media screen and (max-width: 767px) {
  
-        @media screen and(max-width:427px) {
-                .container {
-                    width: 100vw;
-                    margin: 0;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-        }
-        
-            @media screen and (min-width: 428px) {
-                .container {
-                    width: 428px;
-                }
-            }
     .customers-list-mobile {
         display: flex;
         flex-wrap: wrap;
@@ -1086,11 +1011,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    @media screen and (min-width: 768px) {
-            .container {
-                width: 768px;
-            }
-        }
     .customers-list-tablet {
         display: flex;
         flex-wrap: wrap;
@@ -1118,9 +1038,7 @@ body {
 }
 
  @media screen and (min-width:1200px) {
-     .container {
-         width: 1200px;
-     }
+    
     .customer-section {
             padding: 120px 0;
         }
@@ -1425,22 +1343,10 @@ body {
     /* .secondary-title{
         text-align: center;
     } */
-    
+    .modal-form-input{
+        width: 428px;
+    }
   
-    @media screen and(max-width:427px) {
-            .container {
-                width: 100vw;
-                margin: 0;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-    
-        @media screen and (min-width: 428px) {
-            .container {
-                width: 428px;
-            }
-        }
     .footer-fon {
         padding: 96px 0;
     }
@@ -1504,11 +1410,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    @media screen and (min-width: 768px) {
-            .container {
-                width: 768px;
-            }
-        }
+   
     .footer-fon {
         padding-top: 96px;
         padding-bottom: 96px;
@@ -1563,9 +1465,7 @@ body {
 }
 
 @media screen and (min-width:1200px) {
-    .container {
-        width: 1158px;
-    }
+    
     .footer-fon {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -1653,9 +1553,7 @@ body {
 
 /* -----------Form Footer------------ */
 @media screen and (min-width: 1200px) {
-    .container {
-            width: 1158px;
-        }
+   
     .subscribe-text {
         font-family: "Roboto";
         font-style: normal;
