@@ -22,11 +22,12 @@
 }
 
 /*------------components*/
-.container {
-    margin-left: auto;
-    margin-right: auto;
+.conteiner {
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 img {
     display: block;
@@ -165,13 +166,7 @@ body {
 .contact-phone:focus{
     color: var(--secondary-color-first);
 }
-.conteiner {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 
  /* ---------header */
