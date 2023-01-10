@@ -511,7 +511,7 @@ a.act {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: var(-secondary-color-firstr);
+  background: var(--secondary-color-first);
   width: 100%;
   height: 100%;
   transition: background-color var(--transition-duradion-and-funk);
@@ -704,7 +704,7 @@ a.act {
   height: 100%;
   overflow: auto;
   transform: translate(0, 100%);
-  transition: transform var(---transition-duradion-and-funk);
+  transition: transform var(--transition-duradion-and-funk);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -776,7 +776,7 @@ a.act {
   padding-bottom: 32px;
   padding-left: 16px;
   border: 0.5px solid;
-  border-color: var(-secondary-color-fourth);
+  border-color: var(--secondary-color-third);
   border-top: none;
 }
 .portfolio-header {
@@ -845,7 +845,7 @@ a.act {
   }
 
   .overlay {
-    padding: 112px 55px;
+    padding: 112px 0px;
   }
 
   .hero-header {
